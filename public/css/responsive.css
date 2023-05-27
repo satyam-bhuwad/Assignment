@@ -1,0 +1,275 @@
+@media screen and (max-width: 992px){
+.banner-from .btn{
+    font-size: 12px !important;
+}
+.form-control{
+	font-size: 12px !important;
+}
+.form-select{
+	font-size: 12px !important;
+}
+.menu ul li a{
+	font-size: 14px;
+}
+.get-btn .btn{
+	font-size: 12px !important;
+	padding-top: 9px !important;
+}
+.logo img{
+	width: 120px;
+}
+.banner-heading h2 {
+	font-size: 25px;
+}
+.banner-heading h4{
+	font-size: 14px;
+}
+.main-box img{
+	width: 50px;
+}
+.main-box h5{
+	font-size: 14px;
+}
+.main-box h2{
+	font-size: 20px;
+}
+/******.section-service*************************/
+.section-service{
+	padding-top: 30px;
+}
+.service-title h3{
+	font-size: 20px;
+}
+.service-title h3::before {
+	width: 80px;
+}
+.btn-filter{
+	font-size: 12px !important;
+}
+.filterDiv{
+	width: 30%;
+}
+.filter-content h3{
+	font-size: 15px;
+}
+.filter-content p{
+	font-size: 13px;
+}
+.filter-content ul li{
+	font-size: 11px;
+}
+.section-service{
+	padding-bottom: 70px;
+}
+/*********#testimonials *********************************/
+#testimonials {
+	padding-top: 70px;
+	padding-bottom: 0px;
+}
+.instructor-heading h3{
+	font-size: 20px;
+}
+.instructor-heading h3::before{
+	width: 80px;
+}
+.testimonial-box .box .testimonial-item .icon{
+	bottom: 45px;
+}
+
+.testimonial-box .box .testimonial-item .icon a{
+	width: 20px;
+	height: 20px;
+	font-size: 10px;
+}
+.content-box h4{
+	font-size: 14px;
+}
+.content-box p{
+	font-size: 11px;
+}
+.content-box ul li{
+	font-size: 8px;
+}
+.testimonial-box .box{
+	background-color: transparent;
+}
+/********.blog-heading h3*********************/
+
+.blog-heading h3{
+	font-size: 20px;
+}
+.blog-heading h3::before{
+	width: 80px;
+}
+.blog-heading .btn-blog {
+	padding: 11px 20px;
+	font-size: 12px;
+}
+.bog-box .blog-content .blog-icon ul{
+	margin-bottom: 10px;
+}
+.bog-box .blog-content .blog-icon ul li{
+	padding-right: 15px;
+	font-size: 10px;
+}
+.bog-box .blog-content h5{
+	font-size: 13px;
+}
+.bog-box .blog-content a{
+	font-size: 13px;
+}
+
+/********footer*********************/
+.foot-box img{
+	width: 100px;
+}
+.foot-box h6{
+	font-size: 13px;
+}
+.foot-box p{
+	font-size: 12px;
+}
+.foot-box h5{
+	font-size: 13px;
+}
+.foot-box ul li a{
+	font-size: 12px;
+}
+.footer{
+	padding-bottom: 0px;
+}
+}
+
+@media screen and (max-width: 768px){
+   .main-menu{
+		display: block !important;
+	}
+	.logo{
+		display: none;
+	}
+	.mobile-logo{
+		display: block;
+		background-color: #ecf7fb;
+		box-sizing: border-box;
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+	.mobile-view{
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	.toggle-bar{
+		display: block;
+		color: #000000;
+		font-size: 20px;
+	}
+	.menu ul{
+		display: block;
+		padding-left: 0px;
+	}
+	.menu ul li{
+		border-bottom: 1px solid #ffffff;
+		padding: 15px;
+	}
+	.menu ul li a{
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.container-width{
+	   max-width: 100% !important;
+	}
+	.header{
+		background-color: #f59a69;
+		padding-bottom: 15px;
+	}
+	#menubar{
+		display: none;
+	}
+
+	/*********banner**************************/
+	.banner{
+		padding-top: 70px;
+	}
+	.main-box{
+		margin-bottom: 10px;
+	}
+	.filterDiv{
+		width: 46%;
+	}
+	.btn-filter {
+		font-size: 9px !important;
+    }
+    .bog-box{
+    	margin-bottom: 25px;
+    }
+    .subscribe-bg{
+    	height: 320px;
+    	margin-top: 0px;
+    }
+    .subscribe-box-left{
+    	width: 100%;
+    	top: 70px;
+    }
+    .subscribe-box-right{
+    	display: none;
+    }
+    .subscribe-box h4 {
+    	font-size: 20px;
+    }
+    .subscribe-box p {
+    	font-size: 13px;
+    }
+    .btn-subscribe{
+    	font-size: 14px !important;
+    }
+    .main-footer{
+    	display: block;
+    }
+    .foot-box{
+    	width: 100%;
+    	margin-bottom: 35px;
+    }
+    .foot-box img{
+    	display: block;
+    	margin: 0 auto;
+    }
+    .foot-box h6{
+    	text-align: center;
+    	margin-top: 20px;
+    }
+    .foot-box p{
+    	text-align: center;
+    }
+    .foot-box h5{
+    	text-align: center;
+    }
+    .foot-box ul li a{
+    	display: block;
+    	text-align: center;
+    }
+    .testimonial-box{
+    	height: auto;
+    }
+    .testimonial-item img{
+    	width: 100%;
+    }
+    .testimonial-box .box{
+    	width: 100%;
+    }
+    .testimonial-box .box:not(:first-child){
+        display: none;
+    }
+    /**********************/
+    .our-blog {
+    	padding-top: 70px;
+    }
+
+}
+@media screen and (max-width: 524px){
+	.filterDiv{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
