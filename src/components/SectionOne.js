@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class SectionOne extends Component {
-    render() {
+function SectionOne() {
+
         return (
             <div>
                 <section className="section-one">
@@ -39,7 +39,6 @@ class SectionOne extends Component {
       </section>
             </div>
         );
-    }
 }
 
 export default SectionOne;

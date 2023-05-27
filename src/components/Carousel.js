@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Carousel extends Component {
-    render() {
+function Carousel() {
         return (
             <div>
                 <section className="banner">
@@ -47,7 +46,6 @@ class Carousel extends Component {
       </section>
             </div>
         );
-    }
 }
 
 export default Carousel;

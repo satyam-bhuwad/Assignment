@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Subscribe extends Component {
-    render() {
+function Subscribe() {
         return (
             <div>
                 <section className="subscribe-page">
@@ -32,7 +31,6 @@ class Subscribe extends Component {
       </section>
             </div>
         );
-    }
 }
 
 export default Subscribe;

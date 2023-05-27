@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Blog extends Component {
-    render() {
+function Blog() {
         return (
             <div>
                 <section className="our-blog">
@@ -73,7 +72,6 @@ class Blog extends Component {
       </section>
             </div>
         );
-    }
 }
 
 export default Blog;

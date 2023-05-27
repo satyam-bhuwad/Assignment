@@ -1,40 +1,42 @@
 import React, { useEffect } from 'react';
 
-function CourseList() {
+function Services() {
   useEffect(() => {
-    filterSelection('all');
+    filterSelection("all");
   }, []);
 
   function filterSelection(c) {
-    const elements = document.getElementsByClassName('filter-div');
-    if (c === 'all') {
-      Array.from(elements).forEach((element) => {
-        element.style.display = 'block';
-      });
+    const elements = Array.from(document.getElementsByClassName("filterDiv"));
+    if (c === "all") {
+      elements.forEach((element) => (element.style.display = "block"));
     } else {
-      Array.from(elements).forEach((element) => {
+      elements.forEach((element) => {
         if (element.classList.contains(c)) {
-          element.style.display = 'block';
+          element.style.display = "block";
         } else {
-          element.style.display = 'none';
+          element.style.display = "none";
         }
       });
     }
   }
 
-  function handleFilterClick(c) {
-    filterSelection(c);
-
-    const buttons = document.getElementsByClassName('btn-filter');
-    Array.from(buttons).forEach((button) => {
-      if (button.classList.contains('active')) {
-        button.classList.remove('active');
+  useEffect(() => {
+    const btnContainer = document.getElementById("myBtnContainer");
+    const btns = btnContainer.getElementsByClassName("btn");
+    const handleClick = (event) => {
+      const current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      event.target.className += " active";
+    };
+    for (let i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", handleClick);
+    }
+    return () => {
+      for (let i = 0; i < btns.length; i++) {
+        btns[i].removeEventListener("click", handleClick);
       }
-    });
-
-    const currentButton = document.getElementById(c);
-    currentButton.classList.add('active');
-  }
+    };
+  }, []);
 
   return (
     <section className="section-service">
@@ -42,65 +44,37 @@ function CourseList() {
         <div className="row">
           <div className="col-md-12">
             <div className="service-title">
-              <h3>Our Online Courses</h3>
+              <h3>our online courses</h3>
             </div>
           </div>
         </div>
         <div className="row">
           <div className="col-md-12">
             <div id="myBtnContainer">
-              <button
-                id="all"
-                className="btn btn-filter active"
-                onClick={() => handleFilterClick('all')}
-              >
-                All
+              <button className="btn btn-filter active" onClick={() => filterSelection('all')}>
+                all
               </button>
-              <button
-                id="business"
-                className="btn btn-filter"
-                onClick={() => handleFilterClick('business')}
-              >
-                Business
+              <button className="btn btn-filter" onClick={() => filterSelection('business')}>
+                business
               </button>
-              <button
-                id="design"
-                className="btn btn-filter"
-                onClick={() => handleFilterClick('design')}
-              >
-                Design
+              <button className="btn btn-filter" onClick={() => filterSelection('design')}>
+                design
               </button>
-              <button
-                id="development"
-                className="btn btn-filter"
-                onClick={() => handleFilterClick('development')}
-              >
-                Development
+              <button className="btn btn-filter" onClick={() => filterSelection('development')}>
+                development
               </button>
-              <button
-                id="management"
-                className="btn btn-filter"
-                onClick={() => handleFilterClick('management')}
-              >
-                Management
+              <button className="btn btn-filter" onClick={() => filterSelection('management')}>
+                management
               </button>
-              <button
-                id="technology"
-                className="btn btn-filter"
-                onClick={() => handleFilterClick('technology')}
-              >
-                Technology
+              <button className="btn btn-filter" onClick={() => filterSelection('technology')}>
+                technology
               </button>
-              <button
-                id="photo"
-                className="btn btn-filter"
-                onClick={() => handleFilterClick('photo')}
-              >
-                Photo
+              <button className="btn btn-filter" onClick={() => filterSelection('photo')}>
+                photo
               </button>
             </div>
             <div className="filter-body">
-              <div className="filter-div business">
+              <div className="filterDiv business">
               <div className="item-box">
                            <img src="images/business-one.jpg" />
                            <div className="rating">
@@ -133,7 +107,7 @@ function CourseList() {
                            </ul>
                         </div>
               </div>
-              <div className="filter-div design">
+              <div className="filterDiv design">
               <div className="item-box">
                            <img src="images/web-design.jpg" />
                            <div className="rating">
@@ -166,7 +140,7 @@ function CourseList() {
                            </ul>
                         </div>
               </div>
-              <div className="filter-div development">
+              <div className="filterDiv development">
               <div className="item-box">
                            <img src="images/app-development.jpg" />
                            <div className="rating">
@@ -199,7 +173,7 @@ function CourseList() {
                            </ul>
                         </div>
               </div>
-              <div className="filter-div management">
+              <div className="filterDiv management">
               <div className="item-box">
                            <img src="images/management.jpg" />
                            <div className="rating">
@@ -232,7 +206,7 @@ function CourseList() {
                            </ul>
                         </div>
               </div>
-              <div className="filter-div photo">
+              <div className="filterDiv photo">
               <div className="item-box">
                            <img src="images/photo.jpg" />
                            <div className="rating">
@@ -265,7 +239,7 @@ function CourseList() {
                            </ul>
                         </div>
               </div>
-              <div className="filter-div technology">
+              <div className="filterDiv technology">
               <div className="item-box">
                            <img src="images/technology.jpg" />
                            <div className="rating">
@@ -306,4 +280,4 @@ function CourseList() {
   );
 }
 
-export default CourseList;
+export default Services;

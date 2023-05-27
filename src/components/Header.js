@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Header extends Component {
-    render() {
+function Header() {
+
         return (
             <div>
                 <div className="mobile-logo">
@@ -57,7 +57,6 @@ class Header extends Component {
       </header>
             </div>
         );
-    }
 }
 
 export default Header;

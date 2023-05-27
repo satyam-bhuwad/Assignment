@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Testimonial extends Component {
-    render() {
+function Testimonial() {
         return (
             <div>
                 <div id="testimonials" className="carousel slide">
@@ -262,7 +261,6 @@ class Testimonial extends Component {
 
             </div>
         );
-    }
 }
 
 export default Testimonial;
